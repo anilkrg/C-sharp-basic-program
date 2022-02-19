@@ -1,0 +1,22 @@
+
+class program
+{
+static void Main(string[] args)
+        {
+            int n;
+            Console.WriteLine("Enter your no.");
+            n = int.Parse(Console.ReadLine());
+           if(n%3==0 && n%7==0)
+            {
+                Console.WriteLine("Yes, the no is multiple 3 and 7");
+
+            }
+           else
+            {
+                Console.WriteLine("No, the no is not multiple 3 and 7");
+
+            }
+           
+           
+           }
+}
