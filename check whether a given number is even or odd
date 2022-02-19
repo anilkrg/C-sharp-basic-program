@@ -1,0 +1,20 @@
+class program
+{
+static void Main(string[] args)
+        {
+            int n;
+            Console.WriteLine("Enter your no.");
+            n = int.Parse(Console.ReadLine());
+           if(n%2==0)
+            {
+                Console.WriteLine("Even no.");
+
+            }
+           else
+            {
+                Console.WriteLine("Odd no.");
+
+            }
+            Console.ReadKey();
+        }
+}
