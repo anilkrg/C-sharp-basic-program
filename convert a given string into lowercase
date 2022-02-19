@@ -1,0 +1,9 @@
+class program
+{
+static void Main(string[] args)
+        {
+            string name="SURYA";
+            Console.WriteLine(name.ToLower());
+            Console.ReadKey();
+        }
+}
