@@ -1,0 +1,19 @@
+kelvin = celsius + 273       fahrenheit = celsius x 18 / 10 + 32
+
+
+class
+{
+static void Main(string[] args)
+        {
+            float cel,kelvin,fahrenheit;
+
+            Console.WriteLine("enter Celsius");
+            cel = float.Parse(Console.ReadLine());
+            kelvin = cel + 273;
+            fahrenheit = cel * 18 / 10 + 32;
+            
+            Console.WriteLine("Kelvin :"+kelvin);
+            Console.WriteLine("Fahrenheit : " + fahrenheit);
+            Console.ReadKey();
+        }
+}
