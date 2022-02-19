@@ -1,0 +1,21 @@
+        class program
+        {
+        static void Main(string[] args)
+        {
+            float n1,n2,sum,sub,mul,div;
+
+            Console.WriteLine("enter first no.");
+            n1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("enter second no.");
+            n2 = float.Parse(Console.ReadLine());
+            sum = n1 + n2;
+            sub = n1 - n2;
+            mul = n1 * n2;
+            div = n1 / n2;
+            Console.WriteLine("Add :"+sum);
+            Console.WriteLine("Subtraction : " + sub);
+            Console.WriteLine("multiplication : " + mul);
+            Console.WriteLine("division : " + div);
+            Console.ReadKey();
+        }
+        }
