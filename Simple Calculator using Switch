@@ -1,0 +1,67 @@
+class pro
+{
+static void Main(string[] args)
+        {
+            float sum, sub, mul, div,n1,n2;
+            int choice;
+            string ch;
+
+            Console.WriteLine("Enter the two no");
+            n1 = float.Parse(Console.ReadLine());
+            n2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Choose Your Choice");
+            Console.WriteLine("1.Addition ");
+            Console.WriteLine("2.Subtraction ");
+            Console.WriteLine("3.Multiply ");
+            Console.WriteLine("4.Division ");
+            Console.WriteLine("5.Exit ");
+
+        Again:
+            Console.WriteLine("plz Enter your choice");
+            choice = int.Parse(Console.ReadLine());
+           
+            switch (choice)
+            {
+                case 1:
+                    {
+                        sum = n1 + n2;
+                        Console.WriteLine(sum);
+                    }
+                    break;
+                case 2:
+                    {
+                        sub = n1 - n2;
+                        Console.WriteLine(sub);
+
+                    }
+                    break;
+                case 3:
+                    {
+                        mul = n1 * n2;
+                        Console.WriteLine(mul);
+                    }
+
+                        break;
+                case 4:
+                    {
+                        div = n1 / n2;
+                        Console.WriteLine(div);
+                 }
+                    break;
+                  
+            }
+            Console.WriteLine("Do you want to continue Y/N");
+            ch = Console.ReadLine();
+            if(ch=="Y")
+            {
+                goto Again;
+            }
+            else
+            {
+                
+            }
+            
+            Console.ReadKey();         
+
+        }
+        }
