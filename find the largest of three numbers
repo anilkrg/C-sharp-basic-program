@@ -1,0 +1,29 @@
+class pro
+{
+static void Main(string[] args)
+        {
+            float n1, n2, n3;
+
+
+            Console.WriteLine("Enter the three no");
+            n1 = float.Parse(Console.ReadLine());
+            n2 = float.Parse(Console.ReadLine());
+            n3 = float.Parse(Console.ReadLine());
+            if (n1 > n2 && n1 > n3)
+            {
+                Console.WriteLine("First number is greatest");
+
+            }
+            else if (n2 > n3 && n2 > n1)
+            {
+                Console.WriteLine("Second number is greatest");
+            }
+
+            else
+            {
+                Console.WriteLine("Third number is greatest");
+            }
+            Console.ReadKey();
+        }
+
+}
