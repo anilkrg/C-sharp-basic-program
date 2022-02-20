@@ -1,0 +1,64 @@
+class atm
+{
+static void Main(string[] args)
+        {
+            int bal = 50000, current, debit, depo, pin,ch;
+            string choice;
+
+            Console.WriteLine("-----------Welcome---------");
+           
+            Console.WriteLine("1.Balance Enquiry ");
+            Console.WriteLine("2.Withdrawl Amount ");
+            Console.WriteLine("3.Deposit Amount ");
+            Console.WriteLine("4.Exit ");
+            again:
+            Console.WriteLine("Enter your choice");
+            ch =int.Parse(Console.ReadLine());
+           
+            switch (ch)
+                {
+                    case 1:
+                        {
+                            Console.WriteLine("Your amount balance is: " + bal);
+                        }
+                        break;
+
+                    case 2:
+                        {
+                            Console.WriteLine("Enter your Debit amount");
+                            debit = int.Parse(Console.ReadLine());
+                            bal = bal - debit;
+                            Console.WriteLine("Your Current balance is: " + bal);
+                        }
+                        break;
+
+                    case 3:
+                        {
+                            Console.WriteLine("Enter your deposit amount");
+                            depo = int.Parse(Console.ReadLine());
+                            current = bal + depo;
+                            Console.WriteLine("Your Total balance is: " + current);
+                        }
+                        break;
+                    case 4:
+                        {
+                            Console.WriteLine("Thanks for using ATM serices");
+                            break;
+                        }
+                        
+                }
+                Console.WriteLine("Do you want to continue Y/N");
+
+                choice =(Console.ReadLine());
+                if (choice == "Y")
+                {
+                    goto again;
+                }
+                else
+                {
+                    
+                }
+                Console.ReadLine();
+            }
+        }
+        }
