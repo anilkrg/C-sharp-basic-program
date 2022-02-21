@@ -1,0 +1,23 @@
+class Program
+    {
+        public void sum()
+        {
+            int[] num = { 1, 2, 3 };
+            int sumi = 0;
+            for (int i = 0; i < num.Length; i++)
+            {
+                sumi += num[i];
+            }
+            Console.WriteLine(sumi);
+        }
+
+        static void Main(string[] args)
+        {
+            Program ob = new Program();
+            ob.sum();
+            Console.ReadKey();
+
+
+       }
+        
+        }
