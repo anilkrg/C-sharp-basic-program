@@ -1,0 +1,25 @@
+class Program
+    {
+        int c;
+        float add;
+     void sum(int n1,int n2)
+        {
+          
+           c = n1 + n2;
+            Console.WriteLine("Result is: " + c);
+        }
+
+        void sum(float n1,float n2)
+        {
+            add = n1 + n2;
+            Console.WriteLine("Result is: " + add);
+        }
+        static void Main(string[] args)
+        {
+            Program ob = new Program();
+            ob.sum(10,20);
+            ob.sum(10.5f,11.5f);
+            Console.ReadKey();
+       }
+        
+        }
