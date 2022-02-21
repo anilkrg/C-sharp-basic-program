@@ -1,0 +1,28 @@
+class area
+    {
+
+        public float side,a,b,c,s,tri;
+        public area(float side)
+        {
+            this.side = side;          
+            Console.WriteLine("Area of Square: {0}",side*side);
+        }
+        public area(float a, float b,float c)
+        {
+            this.a = b;
+            this.b = b;
+            this.c = c;
+            s = (a*b*c) / 2;
+            float tri = Math.Sqrt(s*(s-a)(s-b)(s-c) );
+           Console.WriteLine("Area of Triangle: {0}", tri);
+
+
+        }
+        static void Main(string[] args)
+        {
+            area ob = new area(20,10,5);
+            area ob1 = new area(5);
+            Console.ReadKey();
+       }
+        
+        }
