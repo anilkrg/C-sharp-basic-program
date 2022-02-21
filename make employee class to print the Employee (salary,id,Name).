@@ -1,0 +1,19 @@
+class Program
+    {
+        int id, salary;
+        string name;
+     void showEmpRecord(int id, string name, int salary)
+        {
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+            Console.WriteLine("Record is {0} {1} {2}", id, name, salary);
+        }
+        static void Main(string[] args)
+        {
+            Program ob = new Program();
+            ob.showEmpRecord(101, "Arya", 50000);
+            Console.ReadKey();
+       }
+        
+        }
