@@ -1,0 +1,32 @@
+interface Iemployee
+        {
+            void empInsert();
+            void empDisplay();
+        }
+    class Emp: Iemployee
+
+        {
+        int id, salary;
+        string name;
+        public void empInsert()
+        {
+            Console.WriteLine("Eneter Employee id,name and salary");
+            id = int.Parse(Console.ReadLine());
+            name = (Console.ReadLine());
+            salary = int.Parse(Console.ReadLine());
+        }
+        public void empDisplay()
+        {
+            Console.WriteLine("Employee details is: {0} {1} {2}", id, name, salary);
+
+        }
+
+        }
+static void Main(string[] args)
+        {
+            Emp ob = new Emp();
+            ob.empInsert();
+            ob.empDisplay();
+            Console.ReadKey(); 
+        }
+
