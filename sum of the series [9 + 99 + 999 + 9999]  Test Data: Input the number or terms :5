@@ -1,0 +1,24 @@
+Expected Output : 9 99 999 9999 99999 
+The sum of the series = 111105  
+
+
+class pro
+{
+static void Main(string[] args)
+    {
+            int i, n, sum=0,j=9;
+            Console.WriteLine("Enter the number");
+            n = int.Parse(Console.ReadLine());
+            for (i = 1; i <= n; i++)
+            {
+                Console.WriteLine(j);
+                sum = sum + j;
+                j = j * 10 + 9;
+            }
+            Console.WriteLine("Sum of series "+sum);
+            Console.ReadKey();
+
+            }
+
+            }
+}
