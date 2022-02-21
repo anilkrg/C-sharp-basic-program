@@ -1,0 +1,28 @@
+class Student
+    {
+
+        int roll_no, subject;
+        string name;
+        
+        public void insert(int roll_no, string name, int subject)
+        {
+            this.roll_no = roll_no;
+            this.name = name;
+            this.subject = subject;
+        }
+        
+        public void display()
+        {
+           
+            Console.WriteLine("Record is {0} {1} {2}", roll_no, name, subject);
+                   }
+
+        static void Main(string[] args)
+        {
+            Student obj = new Student();
+            obj.insert(101,"anubhav",10);
+            obj.display();
+               Console.ReadKey();
+       }
+        
+        }
