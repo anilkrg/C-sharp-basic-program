@@ -1,0 +1,48 @@
+class A
+    {
+        public int n1, n2, sum, sub, div;
+        public void Adding()
+        {
+            Console.WriteLine("Enter the 2 number");
+            n1 = int.Parse(Console.ReadLine());
+            n2 = int.Parse(Console.ReadLine());
+            sum = n1 + n2;
+            Console.WriteLine("Sum of two number = {0}" , sum);
+        }
+    }
+    class B : A
+    {
+        public void subtraction()
+        {
+            Console.WriteLine("Enter the 2 number");
+            n1 = int.Parse(Console.ReadLine());
+            n2 = int.Parse(Console.ReadLine());
+            sub = n1 - n2;
+            Console.WriteLine("Subtraction of two number = {0}", sub);
+        }
+
+
+    }
+
+    class C : B
+    {
+        public void Division()
+        {
+            Console.WriteLine("Enter the 2 number");
+            n1 = int.Parse(Console.ReadLine());
+            n2 = int.Parse(Console.ReadLine());
+            div = n1 / n2;
+            Console.WriteLine("Division of two number = {0}", div);
+        }
+
+    }	
+
+static void Main(string[] args)
+        {
+            C obj = new C();
+            obj.Division();
+            obj.Adding();
+            obj.subtraction();
+
+            Console.ReadKey();
+        }
