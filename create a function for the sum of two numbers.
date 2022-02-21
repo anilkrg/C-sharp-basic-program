@@ -1,0 +1,20 @@
+class Program
+    {
+        public void sum()
+        {
+            int n1, n2,sum;
+            Console.WriteLine("Enter the Two number");
+            n1 = int.Parse(Console.ReadLine());
+            n2 = int.Parse(Console.ReadLine());
+            sum = n1 + n2;
+            Console.WriteLine("Result is: " + sum);
+        }
+
+        static void Main(string[] args)
+        {
+            Program ob = new Program();
+            ob.sum();
+
+       }
+        
+        }
