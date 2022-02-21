@@ -1,0 +1,27 @@
+class Student
+    {
+        public static int roll_no;
+        public static string name;
+        public static string subject;
+        private Student()
+        {
+
+        }
+
+        public static void details()
+        {
+            roll_no = 101;
+            name = "surya Kumar";
+            subject = "Computer science";
+
+            Console.WriteLine("Details {0} {1} {2}", roll_no, name, subject);
+
+        }
+
+
+    }
+static void Main(string[] args)
+        {
+            Student.details();
+            Console.ReadKey();
+        }
